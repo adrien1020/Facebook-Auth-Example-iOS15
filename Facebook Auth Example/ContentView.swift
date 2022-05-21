@@ -13,8 +13,10 @@ struct ContentView: View {
         VStack(spacing:50){
             Spacer()
             VStack(spacing:7){
-                Text(facebookLoginVM.facebookLoginModel.name ?? "")
-                Text(facebookLoginVM.facebookLoginModel.email ?? "")
+                //Text(facebookLoginVM.facebookLoginModel.name ?? "")
+                //Text(facebookLoginVM.facebookLoginModel.email ?? "")
+                Text(facebookLoginVM.isAuth ? "Adrien SRG": "")
+                Text(facebookLoginVM.isAuth ? "Adr@gmail.com": "")
             }
             Button(action: {
                 if !facebookLoginVM.isAuth{
